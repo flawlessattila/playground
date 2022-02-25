@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- <meta name="viewport" content="user-scalable=no, width=device-width, viewport-fit=cover"> -->
+  <!-- Color theme for statusbar (Android only) -->
+  <meta name="theme-color" content="#0b7380">
+  <!-- Your app title -->
+  <title>Yandex Maps Test</title>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=af522499-3945-435b-aaf2-67b9b85b1bca&lang=ru_RU" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.76, 37.64],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 7
+        });
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="map" style="width: 600px; height: 400px"></div>
+</body>
+
+</html>
